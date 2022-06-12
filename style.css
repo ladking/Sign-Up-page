@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid ;
+    grid-template-rows: 2fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Harmattan', sans-serif;
+    overflow-x: hidden;
+}
+
+.image{
+    background: url(photo3.jpg);
+    background-position:center;
+    background-size: cover;
+    width:100%;
+    height:300px;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight: 700;
+    font-size: 20px;
+}
+.input-field input{
+    padding: 10px;
+    border: none;
+    background-color: hsl(0, 0%, 83%, 0.2);
+    border-bottom: 2px solid grey;
+    width: 90%;
+}
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 15px 0 15px 0;
+    background-color: black;
+    color: white;
+    width: 180px;
+}
+input:focus{
+    outline: none;
+    box-shadow: 2px 5px 10px lightgrey;
+}
+
+@media screen and (min-width: 550px) {
+    .image{
+        background: url(photo3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        width:100%;
+        height:450px;
+    
+    }
+    .form-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 0px;
+    }
+}
+@media screen and (min-width:850px){
+    body{
+        margin: 0;
+        padding: 0;
+        display: grid ;
+        grid-template-columns: 45% 55%;
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Harmattan', sans-serif;
+        overflow-x: hidden;
+    }
+    .image{
+        background: url(photo2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        width:100%;
+        height:100vh;
+    }
+    .form-box{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        margin: 10px;
+    }
+    .input-field{
+        width: 70%;
+    }
+    .input-field input{
+        padding: 10px;
+        border: none;
+        background-color: hsl(0, 0%, 83%, 0.2);
+        border-bottom: 2px solid grey;
+        width: 100%;
+    }
+}
